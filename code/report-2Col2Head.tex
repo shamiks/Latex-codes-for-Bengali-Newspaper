@@ -1,0 +1,51 @@
+﻿% A two-column news report. Heading spanning two columns. Page size roughly A3.
+%============================================
+\documentclass{article} 
+\usepackage{fontspec} 
+\usepackage{xunicode} 
+\usepackage{xltxtra} 
+\usepackage{multicol} 
+\usepackage{ragged2e} 
+\usepackage{wrapfig} 
+\usepackage{graphicx} 
+\usepackage[papersize={11in,18in},top=1in,bottom=1.5in,left=0.5in,right=0.5in]{geometry} 
+%
+% These are the fonts and their variations. Baban12 and BabanBold12 fonts are custom made. Font files are provided in the directory. Ubuntu font is available in internet freely. 
+\newcommand\EN[1]{	 
+\fontsize{#1}{#1}\fontspec{Ubuntu}} 
+\newcommand\BN[1]{ % Normal face of the Bengali font
+\fontsize{#1}{#1}\fontspec[Script=Bengali]{Baban12}} 
+\newcommand\BB[1]{ % Bold face of the Bengali font
+\fontsize{#1}{#1}\fontspec[Script=Bengali]{BabanBold12}} 
+\newcommand\BI[1]{ % Italic face of the Bengali font
+\fontsize{#1}{#1}\fontspec[Script=Bengali, FakeSlant=0.2]{Baban12}} 
+\newcommand\BBI[1]{ % Bold italic face of the Bengali font
+\fontsize{#1}{#1}\fontspec[Script=Bengali, FakeSlant=0.2]{BabanBold12}} 
+%
+%
+\begin{document}
+\begin{minipage}[t]{102mm} % A single news item should be within a minipage environment
+\vspace{8mm}
+\setlength{\baselineskip}{2pt}
+\setlength{\parskip}{0.15ex} 
+\setlength{\parindent}{10pt}
+\begin{multicols}{2}% Two Column environment starts
+% Heading within section
+[\section*{\Centering \BN{28.611}কোচবিহারে মেয়েদের নাট্য কর্মশালা
+\\[2mm]
+}]
+% following three lines for adjusting multiple columns. 
+\setcounter{columnbadness}{7000}
+\setcounter{finalcolumnbadness}{7000}
+\tolerance=2000
+% Reporter's name, place and date of the report.
+\BBI{12.2545}বিকর্ণ, কোচবিহার, ২৮ জুলাই\EN{10}\textbullet\\[0.5mm]
+% Body of the reprot
+\BN{12.06}কোচবিহার কম্পাস নাট্যগোষ্ঠীর উদ্যোগে 'শহিদ বন্দনা স্মৃতি মহিলা আবাস'-এর আবাসিক মেয়েদের নিয়ে চলা ১৫ দিনের নাট্য কর্মশালার আজকে ছিল শেষদিন। এই কর্মশালা শুরু হয়েছিল ১১ জুলাই, মাঝে যদিও দুদিন বন্ধ ছিল। অনুষ্ঠান শুরু হয় আবাসিকদের গাওয়া রবীন্দ্রসঙ্গীত দিয়ে। তারপর পাঁচ মিনিটের একটি ছোটো অনুষ্ঠান 'যোগা উইথ মুভমেন্ট' শেষ হওয়ার পরই শুরু হয়ে যায় মূল আকর্ষণ দুটি নাটক -- সুকুমার রায়ের 'অবাক জলপান' ও রবীন্দ্রনাথ ঠাকুরের 'বিনে পয়সার ভোজ'। দুটি নাটকের মঞ্চসজ্জা ছিল খুবই সামান্য কিন্তু অভিনেত্রীদের চমৎকার অভিনয় বাকি আবাসিকদের যথেষ্ট আনন্দ দিয়েছে। বিশেষভাবে বলতে গেলে অবাক জলপানের একটি মেয়ে এবং বিনে পয়সার ভোজে অক্ষয়বাবুর ভূমিকায় অভিনয় করা দীপমালা আচার্যের অভিনয় উপস্থিত সকলেরই নজর কেশ্তেছে। ৪ জন আমন্ত্রিত সরকারি আধিকারিক ছাশ্তা বাইরের আর কোনো দর্শক না থাকলেও নাটকের আলো ও মাইকের ব্যবহারে কোনো খামতি রাখেনি কোচবিহার কম্পাস।
+
+কথা প্রসঙ্গে কম্পাসের কর্ণধার শ্রীদেবব্রত আচার্য জানালেন 'এই কর্মশালা আমরা প্রথমবার করেছিলাম আজ থেকে ৬ বছর আগে ২০০৯ সালে, তারপর থেকে প্রত্যেকবারই করা হচ্ছে। আমরা বিশ্বাস করি সকলের জন্যে নাটক, সেই কারণে আমরা একই সঙ্গে দুটো জায়গা ধরেছিলাম। একটা হল এই সরকারি হোম যেখানে অনাথ মেয়েরা থাকে আর একটা হল সংশোধনাগার। যাদের সাথে থিয়েটারের কোনো সম্পর্কই নেই তারা থিয়েটারের মধ্যে দিয়ে যদি ভালোভাবে বাঁচতে পারে -- এটাই ছিল লক্ষ্য। সেই লক্ষ্যের থেকেই হোমে ঢোকা আর এদের নিয়ে কাজ করা। আর সেভাবে দেখতে গেলে আমাদের শিক্ষাব্যবস্থায় নাটকের গুরুত্ব কোথায়? বিশ্বভারতী থেকে নাটক নিয়ে পোস্ট গ্রাজুয়েশন করা যায়, কিন্তু তার নিচুস্তরের কোনো সিলেবাসেই নাটকের কোনো জায়গা নেই। কিন্তু দেখো সরকার যে কোনো নতুন প্রকল্প নিয়ে আসুক সেটা স্বাস্থ্য, শিক্ষা বা অন্য যে কোনো কিছু প্রচার করতে যাক -- গ্রামে গঞ্জে গিয়ে মানুষকে বোঝানোর জন্যে সেই নাটকের সাহায্যই কিন্তু নিতে হচ্ছে।' 
+
+এবারের কর্মশালার অভিজ্ঞতার কথা বলতে গিয়ে তিনি বলেন, 'আমাদের মোটামুটি প্রত্যেক বছর একইরকম অভিজ্ঞতা হয় কিন্তু এবারের ব্যাপারটা একটু অন্যরকম ছিল। এবারে কর্মশালায় যোগ দেওয়া ৩৫ জনের মধ্যে ২৪ জন ছিল জেপিএল-এর মেয়ে, মানে জুভেনাইল কেসে যারা অভিযুক্ত। কাজেই প্রথমদিকে তাদের মধ্যে আমরা ঢুকতেই  পারছিলাম না। তবে আস্তে আস্তে চেষ্টা করতে করতে শেষ পর্যন্ত আমরা পেরেছি। আর ধরো এই হোমে যারা থাকে তারা পাশে রামকৃষ্ণ গার্লস স্কুলের ছাত্রী আর এখানে তো ১৮ বছর বয়স পর্যন্ত থাকতে পারবে, তারপর কাউকে কাউকে সরকার থেকে ওই অঙ্গনওয়াড়ি কর্মী হিসেবে নিয়োগ করবে আর নইলে যে হোমে ১৮ বছরের বেশি বয়সে থাকা যায় সেখানে পাঠাবে। আর এর মধ্যে কোনো সৎপাত্র যদি বিয়ে করতে চায় তাহলে বিয়ে হবে। এবারে এদের মধ্যে কেউ কেউ যদি নাটকের মাধ্যমে জীবনকে খুঁজে পেতে চেষ্টা করে, সেই প্রচেষ্টায় আমারাও ওদের পাশে থাকব।' 
+\end{multicols}
+\end{minipage}
+\end{document}
