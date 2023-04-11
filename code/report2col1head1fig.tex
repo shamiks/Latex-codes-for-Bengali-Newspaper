@@ -13,17 +13,18 @@
 % These are the fonts and their variations. Baban12 and BabanBold12 fonts are custom made. Font files are provided in the directory. Ubuntu font is available in internet freely.
 \newcommand\EN[1]{	
 \fontsize{#1}{#1}\fontspec{Ubuntu}}
-\newcommand\BN[1]{
+\newcommand\BN[1]{ % Normal face of the Bengali font 
 \fontsize{#1}{#1}\fontspec[Script=Bengali]{Baban12}}
-\newcommand\BB[1]{
+\newcommand\BB[1]{ % Bold face of the Bengali font 
 \fontsize{#1}{#1}\fontspec[Script=Bengali]{BabanBold12}}
-\newcommand\BI[1]{
+\newcommand\BI[1]{ % Italic face of the Bengali font 
 \fontsize{#1}{#1}\fontspec[Script=Bengali, FakeSlant=0.2]{Baban12}}
-\newcommand\BBI[1]{
+\newcommand\BBI[1]{ % Bold italic face of the Bengali font 
 \fontsize{#1}{#1}\fontspec[Script=Bengali, FakeSlant=0.2]{BabanBold12}}
 %
 %
 \begin{document}
+%
 \begin{minipage}[t]{143mm} % A single news item should be within a minipage environment
 \vspace{7mm}
 \setlength{\baselineskip}{2pt}
